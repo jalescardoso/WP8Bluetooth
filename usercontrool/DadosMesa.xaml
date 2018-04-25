@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="Bilhar.DadosMesa"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="603" Width="470">
+
+    <Grid x:Name="LayoutRoot">
+        <TextBlock Height="35" TextWrapping="Wrap" Text="Dados" VerticalAlignment="Top" FontSize="24" Margin="144,0,165,0"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,35,0,0" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,97,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,66,0,0" TextWrapping="Wrap" Text="Região:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock Height="35" TextWrapping="Wrap" Text="Endereço" VerticalAlignment="Top" FontSize="24" Margin="84,125,163,0" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,172,0,0" TextWrapping="Wrap" Text="Endereço:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,234,0,0" TextWrapping="Wrap" Text="Cidade:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,203,0,0" TextWrapping="Wrap" Text="Bairro:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,261,0,0" TextWrapping="Wrap" Text="Estado:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,292,0,0" TextWrapping="Wrap" Text="CEP:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock Height="35" TextWrapping="Wrap" Text="Contato" VerticalAlignment="Top" FontSize="24" Margin="84,319,178,0" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,354,0,0" TextWrapping="Wrap" Text="Telefone:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,385,0,0" TextWrapping="Wrap" Text="Celular:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock Height="35" TextWrapping="Wrap" Text="Cliente" VerticalAlignment="Top" FontSize="24" Margin="144,414,228,0"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,449,0,0" TextWrapping="Wrap" Text="CPF:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168">
+    		<Run Text="Inscrição estadual"/>
+    		<Run Text=":"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,480,0,0" TextWrapping="Wrap" Text="CNPJ:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,538,0,0" TextWrapping="Wrap" Text="RG:" VerticalAlignment="Top" Width="95"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="0,569,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192">
+    		<Run Text="Data de nascimento"/>
+    		<Run Text=":"/>
+        </TextBlock>
+        <TextBlock x:Name="txt_nome" HorizontalAlignment="Left" Height="31" Margin="67,38,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="399" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_datanasc" HorizontalAlignment="Left" Height="31" Margin="202,572,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="264" TextAlignment="Right" RenderTransformOrigin="0.837,0.387"/>
+        <TextBlock x:Name="txt_rg" HorizontalAlignment="Left" Height="31" Margin="67,541,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="399" TextAlignment="Right" Foreground="White"/>
+        <TextBlock x:Name="txt_inscEstadual" HorizontalAlignment="Left" Height="31" Margin="178,514,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="288" TextAlignment="Right" Foreground="White"/>
+        <TextBlock x:Name="txt_cnpj" HorizontalAlignment="Left" Height="31" Margin="67,483,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="399" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_cpf" HorizontalAlignment="Left" Height="31" Margin="67,452,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="399" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_celular" HorizontalAlignment="Left" Height="31" Margin="85,381,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="381" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_telefone" HorizontalAlignment="Left" Height="31" Margin="100,353,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="366" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_cep" HorizontalAlignment="Left" Height="31" Margin="67,295,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="399" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_estado" HorizontalAlignment="Left" Height="31" Margin="85,268,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="381" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_cidade" HorizontalAlignment="Left" Height="31" Margin="100,237,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="366" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_bairro" HorizontalAlignment="Left" Height="31" Margin="85,206,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="381" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_endereco" HorizontalAlignment="Left" Height="31" Margin="111,175,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="355" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_tipo" HorizontalAlignment="Left" Height="31" Margin="67,97,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="399" TextAlignment="Right"/>
+        <TextBlock x:Name="txt_regiao" HorizontalAlignment="Left" Height="31" Margin="67,69,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="399" TextAlignment="Right"/>
+
+    </Grid>
+</UserControl>

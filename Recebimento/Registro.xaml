@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Bilhar.Recebimento.Registro"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Bilhar" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Registro" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="Registro anterior:" VerticalAlignment="Top" Width="202"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,372,0,0" TextWrapping="Wrap" Text="Percentual de recebimento:" VerticalAlignment="Top" Width="249"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,321,0,0" TextWrapping="Wrap" Text="Total bruto" VerticalAlignment="Top" Width="202"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,264,0,0" TextWrapping="Wrap" Text="Valor partida:" VerticalAlignment="Top" Width="202"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,204,0,0" TextWrapping="Wrap" Text="Desconto:" VerticalAlignment="Top" Width="202"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,147,0,0" TextWrapping="Wrap" Text="Total de partidas:" VerticalAlignment="Top" Width="202"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" Text="Registro atual:" VerticalAlignment="Top" Width="202" Padding="0"/>
+            <TextBlock x:Name="txt_regAnterior" HorizontalAlignment="Left" Margin="233,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" TextAlignment="Right"/>
+            <TextBlock x:Name="txt_percRecebimento" HorizontalAlignment="Left" Margin="259,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" TextAlignment="Right"/>
+            <TextBlock x:Name="txt_totalbruto" HorizontalAlignment="Left" Margin="233,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" TextAlignment="Right"/>
+            <TextBlock x:Name="txt_valorpartida" HorizontalAlignment="Left" Margin="233,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" TextAlignment="Right"/>
+            <TextBlock x:Name="txt_desconto" HorizontalAlignment="Left" Margin="233,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" TextAlignment="Right"/>
+            <TextBlock x:Name="txt_totalpartidas" HorizontalAlignment="Left" Margin="233,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" TextAlignment="Right"/>
+
+        </Grid>
+        <TextBox x:Name="txtb_regAtual" HorizontalAlignment="Left" Height="69" Margin="254,75,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" InputScope="Number" LostFocus="txtb_regAtual_LostFocus" TextAlignment="Right" FontSize="24"/>
+        <ProgressBar x:Name="Prgs_registro" HorizontalAlignment="Left" Height="20" Margin="0,-8,-10,0" VerticalAlignment="Top" Width="490" Foreground="#FFE23120" IsIndeterminate="True" Background="#19000000" Visibility="Collapsed"/>
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" ForegroundColor="White" Opacity="1">
+            <shell:ApplicationBarIconButton x:Name="btn_confirma" IconUri="/Assets/appbar.check.png" Text="confirma" Click="btn_confirma_Click"    />
+            <!--<shell:ApplicationBarIconButton x:Name="btn_atualizar" IconUri="/Assets/AppBar/appbar.sync.rest.png" Text="Atualizar" Click="btn_atualizar_Click"   />
+            <shell:ApplicationBarIconButton x:Name="btn_fecharconta" IconUri="/Assets/AppBar/appbar.cancel.rest.png" Text="Fechar Conta" Click="btn_fecharconta_Click"   />-->
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>
